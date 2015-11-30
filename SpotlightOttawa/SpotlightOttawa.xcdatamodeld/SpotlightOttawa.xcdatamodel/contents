@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="8195" systemVersion="14F27" minimumToolsVersion="Xcode 7.0">
+    <entity name="CitySector" representedClassName="CitySector" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="title_english" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title_french" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Event" representedClassName="Event" syncable="YES">
+        <attribute name="contact_email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contact_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contact_phone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contact_phone_extension" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="create_time_stamp" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="description_english" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="description_french" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email_address_english" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email_address_french" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="end_date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="event_times_english" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="event_times_french" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="modify_time_stamp" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="organizer_name_english" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="organizer_name_french" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="owning_organization_name_english" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="owning_organization_name_french" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="start_date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="summary_english" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="summary_french" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title_english" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title_french" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="website_url_english" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="website_url_french" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="category" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SOCategory" syncable="YES"/>
+        <relationship name="citysector" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CitySector" syncable="YES"/>
+        <relationship name="location" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Location" syncable="YES"/>
+        <relationship name="option" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Options" syncable="YES"/>
+    </entity>
+    <entity name="Location" representedClassName="Location" syncable="YES">
+        <attribute name="active" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="address_english" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="address_french" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="intersection_english" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="intersection_french" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name_english" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name_french" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="postal_code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="province" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Options" representedClassName="Options" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="title_english" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="title_french" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Relation" representedClassName="Relation" syncable="YES">
+        <attribute name="category_id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="event_id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="location_id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="option_id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="sector_id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="SOCategory" representedClassName="SOCategory" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="title_english" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title_french" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Event" positionX="-281" positionY="-54" width="128" height="478"/>
+        <element name="Location" positionX="36" positionY="405" width="128" height="223"/>
+        <element name="CitySector" positionX="27" positionY="81" width="128" height="88"/>
+        <element name="Options" positionX="-171" positionY="513" width="128" height="88"/>
+        <element name="Relation" positionX="259" positionY="447" width="128" height="118"/>
+        <element name="SOCategory" positionX="-18" positionY="153" width="128" height="90"/>
+    </elements>
+</model>
